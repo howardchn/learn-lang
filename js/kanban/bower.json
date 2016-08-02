@@ -1,0 +1,21 @@
+{
+  "name": "Kanban",
+  "description": "Kanban",
+  "main": "",
+  "authors": [
+    "howardchn <howardch@outlook.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "^1.11.4",
+    "jquery": "^2.2.3"
+  }
+}
