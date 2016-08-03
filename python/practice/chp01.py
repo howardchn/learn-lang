@@ -9,7 +9,7 @@
 # print(type(4))
 # print(type(4.2))
 # print(type('4'))
-str = 'Hello World!' * 4
+# str = 'Hello World!' * 4
 # print (str)
 # print (str [1:5])
 # print (str [6:])

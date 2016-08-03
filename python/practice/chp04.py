@@ -27,6 +27,10 @@ letter_counts = {letter: word.count(letter) for letter in word}
 # print(letter_counts)
 
 aset = (i for i in range(1, 6) if i % 3 == 1)
-for i in aset:
-    print(i)
+# for i in aset:
+#     print(i)
 
+a = {1, 2, 3}
+b = {3, 4, 5}
+c = a & b
+# print(c)
