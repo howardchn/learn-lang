@@ -24,6 +24,9 @@
 # for item in ul:
 #     print (item)
 
+a = (1, 3, 5, 'hello')
+print(a[3])
+
 
 
 

@@ -34,3 +34,14 @@ a = {1, 2, 3}
 b = {3, 4, 5}
 c = a & b
 # print(c)
+
+def say1(*args):
+    print('My argument1 is', args)
+
+def say2(**args):
+    print('My argument2 is', args)
+
+say1(1, 3, 5)
+say2(a=1, b=2, c=3)
+
+
