@@ -1,7 +1,7 @@
 import os
 import io
 import stat
-import io_util
+import io_util_old
 import sys
 
 '''
@@ -24,7 +24,7 @@ def replaceStr(full_path, source_str, target_str):
         content = file.read()
         content = str(content).replace(source_str, target_str)
 
-        io_util.repcontent(file, content)
+        io_util_old.repcontent(file, content)
     finally:
         if not file == None:
             file.close()

@@ -2,6 +2,7 @@ from xml.etree import ElementTree
 from os import path
 from io import open
 import os
+from ospathex import list_files
 
 def remap_output(csproj_path):
     # ElementTree.register_namespace('xmlns', 'http://schemas.microsoft.com/developer/msbuild/2003')
@@ -29,11 +30,18 @@ def find_relpath(csproj_path, target_basename, debug = True):
         source_path = path.dirname(source_path)
         rel_path = rel_path + '..\\'
 
-    target_path = path.join(rel_path, r'MapSuiteGisEditor\MapSuiteGisEditor\MapSuiteGisEditor\bin', debug and 'debug' or 'release')
+    target_path = path.join(rel_path, r'MapSuiteGisEditor\MapSuiteGisEditor\MapSuiteGisEditor\bin', debug and 'Debug' or 'Release')
     return target_path
 
-source_path = r'E:\ThinkGeo\MapSuite\MapSuite\Layers\Background\Background-Windows\BackgroundForGisEditor-Windows.csproj'
-remap_output(source_path)
+def need_remap(csproj_path):
+    return csproj_path.endswith('ForGisEditor-Windows.csproj')
+
+# dirname = r'E:\ThinkGeo\MapSuite\MapSuite\Layers'
+dirname = r'E:\ThinkGeo\MapSuite\MapSuite\Styles'
+for csproj_path in list_files(dirname, '.csproj'):
+    need_remap = csproj_path.endswith('ForGisEditor-Windows.csproj')
+    if need_remap: 
+        remap_output(csproj_path)
 
 print('Task complete.')
     

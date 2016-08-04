@@ -1,12 +1,12 @@
 import os
 import io
-import io_util
+import io_util_old
 import stat
 import sys
 
 def changens(dir, oldns, newns):
     os.chmod(dir, stat.S_IREAD | stat.S_IWRITE)
-    filepaths = io_util.get_file_list(dir)
+    filepaths = io_util_old.get_file_list(dir)
     for filepath in filepaths:
         file = None
         try:

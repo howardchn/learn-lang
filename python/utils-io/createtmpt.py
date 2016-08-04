@@ -1,6 +1,6 @@
 import io
 import os
-import io_util
+import io_util_old
 import shutil
 import sys
 import stat
@@ -17,7 +17,7 @@ def clone_to(source_folder, target_name):
 
     shutil.copytree(source_folder, target_folder)
 
-    for file_path in io_util.get_file_list(target_folder):
+    for file_path in io_util_old.get_file_list(target_folder):
         new_filepath = file_path.replace(source_name, target_name)
         new_filefolder = os.path.dirname(new_filepath)
         if not os.path.exists(new_filefolder):
