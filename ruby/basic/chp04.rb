@@ -13,4 +13,5 @@ a[1] = Array.new(2, 'World')
 arr1 = [0, 10, 20]
 arr2 = [0, 20, 20]
 
-arr1.each do |i| p i end
+# arr1.each do |i| p i end
+arr2.each do |i| puts i end

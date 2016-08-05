@@ -2,7 +2,7 @@ from xml.etree import ElementTree
 from os import path
 from io import open
 import os
-from ospathex import list_files
+from utils.ospathex import list_files
 
 def remap_output(csproj_path):
     # ElementTree.register_namespace('xmlns', 'http://schemas.microsoft.com/developer/msbuild/2003')
