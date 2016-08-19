@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    var loadUrl = function(filename, callback) {
+      return new Promise(function(fullfill, reject) {
+        $.get(filename, function(data, success) {
+          if (success) fullfill(data);
+          else reject(success);
+        });
+      })
+    };
+
+    var data = loadUrl('content.htm');
+    console.log(data);
+  });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "promiss",
+  "homepage": "https://github.com/howardchn/learn-lang",
+  "authors": [
+    "'howardch@outlook.com' <howardch@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
