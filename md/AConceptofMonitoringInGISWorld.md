@@ -1,4 +1,4 @@
-# A great use of Monitoring in GIS world
+# A Great Concept of Monitoring in GIS World
 I have been in GIS business for almost 10 years. Once I come up with [LogicMonitor](https://www.logicmonitor.com), I can easily connect many GIS solutions before with LogicMonitor Platform. You might be surprise that how can an IT infrastructure performance monitor tool be used in a GIS solution. Please allow me to walk you through one of my project before. I will give it a shot one day.
 
 ## SaaS-based
